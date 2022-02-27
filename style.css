@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.row::after {
+    display: table;
+    clear: both;
+} 
+
+.column {
+    float:left;
+    height: 700px;
+}
+
+.left {
+    width: 25%;
+    background-color: rgb(156, 166, 221);
+}
+
+.right {
+    width: 25%;
+    background-color: rgb(156, 166, 221);
+}
+
+.middle {
+    width: 50%;
+    background-color: rgb(248, 246, 245);
+}
+
+.box {
+    background: rgb(204, 215, 231);
+    border: 1px solid rgb(15, 16, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(4, 70, 88);
+}
+
+.game-board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    padding: 50px;
+} 
+
+.player {
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+.active {
+    opacity: 1;
+    background-color: rgb(75, 93, 192);
+}
+
+.icon {
+    background: rgb(204, 215, 231);
+}
+
+.hidden {
+    display: none;
+}
+
+.winner {
+    background: rgb(38, 199, 73);
+}
+
+.loser {
+    background: rgb(199, 38, 38);
+}
+
+.no-winner {
+    background: rgb(226, 218, 195);
+}
+
+.end-game {
+    align-items: center;
+    padding: 50px;
+}
+
+.restart {
+    background: rgb(53, 136, 184);
+    border: 1px solid rgb(4, 4, 5);
+    width: 150px;
+    height: 100px;
+}
+
+.result {
+    font-size: 50px;
+    padding: 60px;
+}
